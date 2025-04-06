@@ -92,10 +92,11 @@
   gap: 8px;
 }
 
-.checkbox {
-  width: 32px;
-  height: 32px;
-}
+/* .checkbox {
+  width: 19px;
+  height: 19px;
+  margin: 6.5px;
+} */
 
 .checkbox-control {
   width: 19px;

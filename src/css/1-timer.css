@@ -49,9 +49,9 @@
 }
 
 .input {
-  width: 272px;
-  height: 40px;
-  padding: 16px 8px;
+  width: 240px;
+  height: 24px;
+  padding: 8px 16px;
   border-radius: 4px;
   background: #fff;
   border: 1px solid #808080;
@@ -68,6 +68,7 @@
   width: 346px;
   height: 72px;
   display: flex;
+  gap: 27px;
   justify-content: center;
   margin-top: 24px;
 }
@@ -76,7 +77,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 12px;
 }
 
 .value {

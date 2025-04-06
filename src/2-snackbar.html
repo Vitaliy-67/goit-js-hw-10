@@ -1,47 +1,59 @@
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link
-  href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap"
-  rel="stylesheet"
-/>
-<main>
-  <link rel="stylesheet" href="./css/2-snackbar.css" />
-  <a href="/index.html">Start</a>/<a href="/1-timer.html">Timer</a>
-  <form class="form">
-    <label class="field-label">
-      Delay (ms)
-      <input type="number" name="delay" class="input-delay" value="" required />
-    </label>
-    <fieldset class="form-group">
-      <legend class="form-group-lable">State</legend>
-      <div class="form-group-field">
-        <label class="form-field-label">
-          <div class="checkbox">
-            <input
-              class="checkbox-control"
-              type="radio"
-              name="state"
-              value="fulfilled"
-              required
-            />
-          </div>
-          Fulfilled
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/2-snackbar.css" />
+  </head>
+  <body>
+    <main>
+      <a href="/index.html">Start</a>/<a href="/1-timer.html">Timer</a>
+      <form class="form">
+        <label class="field-label">
+          Delay (ms)
+          <input
+            type="number"
+            name="delay"
+            class="input-delay"
+            value=""
+            required
+          />
         </label>
-        <label class="form-field-label">
-          <div class="checkbox">
-            <input
-              class="checkbox-control"
-              type="radio"
-              name="state"
-              value="rejected"
-              required
-            />
+        <fieldset class="form-group">
+          <legend class="form-group-lable">State</legend>
+          <div class="form-group-field">
+            <label class="form-field-label">
+              <input
+                class="checkbox-control"
+                type="radio"
+                name="state"
+                value="fulfilled"
+                required
+              />
+              Fulfilled
+            </label>
+            <label class="form-field-label">
+              <input
+                class="checkbox-control"
+                type="radio"
+                name="state"
+                value="rejected"
+                required
+              />
+              Rejected
+            </label>
           </div>
-          Rejected
-        </label>
-      </div>
-    </fieldset>
-    <button type="submit" class="button-submit">Create notification</button>
-  </form>
-  <script type="module" src="./js/2-snackbar.js"></script>
-</main>
+        </fieldset>
+        <button type="submit" class="button-submit">Create notification</button>
+      </form>
+      <script type="module" src="./js/2-snackbar.js"></script>
+    </main>
+  </body>
+</html>
