@@ -1,1 +1,154 @@
 @import 'flatpickr/dist/flatpickr.min.css';
+@import 'izitoast/dist/css/iziToast.min.css';
+
+.section-timer {
+  width: 355px;
+  height: 144px;
+  margin-top: 36px;
+  margin-left: 156px;
+  display: block;
+  gap: 24px;
+}
+
+.input-data {
+  width: 355px;
+  height: 40px;
+  display: flex;
+  gap: 8px;
+}
+
+.button-start {
+  width: 75px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 8px;
+  border-radius: 8px;
+  border: none;
+  background: #4e75ff;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.64px;
+  outline: none;
+}
+
+.button-start:hover {
+  background-color: #6c8cff;
+  cursor: pointer;
+}
+
+.button-start:disabled {
+  background: #cfcfcf;
+  color: #989898;
+  cursor: default;
+}
+
+.input {
+  width: 272px;
+  height: 40px;
+  padding: 16px 8px;
+  border-radius: 4px;
+  background: #fff;
+  border: 1px solid #808080;
+  color: #2e2f42;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.64px;
+}
+
+.timer {
+  width: 346px;
+  height: 72px;
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 12px;
+}
+
+.value {
+  color: #2e2f42;
+  font-family: Montserrat;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 48px; /* 120% */
+  letter-spacing: 1.6px;
+}
+
+.label {
+  color: #2e2f42;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+
+.flatpickr-day.selected {
+  background: #4e75ff !important;
+  color: #fff !important;
+  border-color: #4e75ff !important;
+}
+
+.flatpickr-day.today {
+  border-color: #4e75ff !important;
+}
+
+.input:hover {
+  border-color: #000000;
+}
+
+.input:focus,
+.flatpickr-input:focus {
+  border-color: #4e75ff !important;
+}
+
+.flatpickr-weekday {
+  color: #2e2f42 !important;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 16px !important;
+  font-style: normal;
+  font-weight: 500 !important;
+  line-height: 24px !important; /* 150% */
+}
+
+.numInput,
+.flatpickr-monthDropdown-months {
+  color: #333 !important;
+  text-align: center;
+  font-family: Montserrat !important;
+  font-size: 16px !important;
+  font-style: normal;
+  font-weight: 600 !important;
+  line-height: normal !important;
+}
+
+.flatpickr-day {
+  color: #666;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.64px;
+}
+
+/* .flatpickr-day.selected:hover {
+  background: #c1c1c1 !important;
+  border-color: #c1c1c1 !important;
+  color: #666 !important;
+} */

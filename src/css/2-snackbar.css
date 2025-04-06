@@ -1,0 +1,127 @@
+@import 'izitoast/dist/css/iziToast.min.css';
+
+.form {
+  width: 360px;
+  height: 230px;
+  margin-top: 36px;
+  margin-left: 156px;
+}
+
+.form-group-lable,
+.field-label,
+.form-field-label {
+  color: #2e2f42;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+
+.field-label,
+.form-group-lable {
+  letter-spacing: 0.64px;
+}
+
+.field-label {
+  width: 360px;
+  height: 72px;
+  margin-bottom: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.input-delay {
+  width: 360px;
+  height: 40px;
+  padding: 8px 16px;
+  color: #2e2f42;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.64px;
+  border-radius: 4px;
+  border: 1px solid #808080;
+}
+
+.input-delay:hover {
+  border: 1px solid #000;
+}
+
+.input-delay:focus,
+:active {
+  outline: #4e75ff;
+  border-color: #4e75ff;
+}
+
+.form-group {
+  width: 360px;
+  height: 78px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 48px;
+  padding: 0;
+  margin: 0;
+  border-radius: 4px;
+  border: 1px solid #808080;
+}
+
+.form-group-lable {
+  margin-left: 24px;
+}
+.form-group-field {
+  width: 264px;
+  height: 32px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 48px;
+  padding: 14px 48px 8px 48px;
+}
+
+.form-field-label {
+  width: auto;
+  height: 32px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+.checkbox {
+  width: 32px;
+  height: 32px;
+}
+
+.checkbox-control {
+  width: 19px;
+  height: 19px;
+  margin: 6.5px;
+}
+
+.button-submit {
+  width: 360px;
+  height: 40px;
+  margin-top: 24px;
+  padding: 8px 16px;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.64px;
+  border-radius: 8px;
+  border-style: none;
+  border-color: #4e75ff;
+  background: #4e75ff;
+}
+
+.button-submit:hover {
+  border-color: #6c8cff;
+  background: #6c8cff;
+}

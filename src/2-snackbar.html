@@ -1,20 +1,47 @@
-<form class="form">
-  <label>
-    Delay (ms)
-    <input type="number" name="delay" required />
-  </label>
-
-  <fieldset>
-    <legend>State</legend>
-    <label>
-      <input type="radio" name="state" value="fulfilled" required />
-      Fulfilled
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap"
+  rel="stylesheet"
+/>
+<main>
+  <link rel="stylesheet" href="./css/2-snackbar.css" />
+  <a href="/index.html">Start</a>/<a href="/1-timer.html">Timer</a>
+  <form class="form">
+    <label class="field-label">
+      Delay (ms)
+      <input type="number" name="delay" class="input-delay" value="" required />
     </label>
-    <label>
-      <input type="radio" name="state" value="rejected" required />
-      Rejected
-    </label>
-  </fieldset>
-
-  <button type="submit">Create notification</button>
-</form>
+    <fieldset class="form-group">
+      <legend class="form-group-lable">State</legend>
+      <div class="form-group-field">
+        <label class="form-field-label">
+          <div class="checkbox">
+            <input
+              class="checkbox-control"
+              type="radio"
+              name="state"
+              value="fulfilled"
+              required
+            />
+          </div>
+          Fulfilled
+        </label>
+        <label class="form-field-label">
+          <div class="checkbox">
+            <input
+              class="checkbox-control"
+              type="radio"
+              name="state"
+              value="rejected"
+              required
+            />
+          </div>
+          Rejected
+        </label>
+      </div>
+    </fieldset>
+    <button type="submit" class="button-submit">Create notification</button>
+  </form>
+  <script type="module" src="./js/2-snackbar.js"></script>
+</main>
