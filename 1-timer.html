@@ -3,45 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Timer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap"
       rel="stylesheet"
     />
-    <script type="module" crossorigin src="/vanilla-app-template/1-timer.js"></script>
-    <link rel="modulepreload" crossorigin href="/vanilla-app-template/assets/modulepreload-polyfill-B5Qt9EMX.js">
-    <link rel="modulepreload" crossorigin href="/vanilla-app-template/assets/vendor-Dov3POoy.js">
-    <link rel="stylesheet" crossorigin href="/vanilla-app-template/assets/1-timer-DJFsBbrK.css">
+    <script type="module" crossorigin src="/goit-js-hw-10/1-timer.js"></script>
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-10/assets/modulepreload-polyfill-B5Qt9EMX.js">
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-10/assets/vendor-Dov3POoy.js">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-10/assets/1-timer-DJFsBbrK.css">
   </head>
   <body>
-    <main>
-      <a href="./index.html">Start</a>/<a href="./2-snackbar.html">Snackbar</a>
-      <section class="section-timer">
-        <div class="input-data">
-          <input type="text" id="datetime-picker" class="input" />
-          <button type="button" data-start class="button-start">Start</button>
+    <a href="./index.html">Start</a>/<a href="./2-snackbar.html">Snackbar</a>
+    <section class="section-timer">
+      <div class="input-data">
+        <input type="text" id="datetime-picker" class="input" />
+        <button type="button" data-start class="button-start">Start</button>
+      </div>
+      <div class="timer">
+        <div class="field">
+          <span class="value js-timer_days" data-days>00</span>
+          <span class="label">Days</span>
         </div>
-        <div class="timer">
-          <div class="field">
-            <span class="value js-timer_days" data-days>00</span>
-            <span class="label">Days</span>
-          </div>
-          <div class="field">
-            <span class="value js-timer_hours" data-hours>00</span>
-            <span class="label">Hours</span>
-          </div>
-          <div class="field">
-            <span class="value js-timer_minutes" data-minutes>00</span>
-            <span class="label">Minutes</span>
-          </div>
-          <div class="field">
-            <span class="value js-timer_seconds" data-seconds>00</span>
-            <span class="label">Seconds</span>
-          </div>
+        <div class="field">
+          <span class="value js-timer_hours" data-hours>00</span>
+          <span class="label">Hours</span>
         </div>
-      </section>
-    </main>
+        <div class="field">
+          <span class="value js-timer_minutes" data-minutes>00</span>
+          <span class="label">Minutes</span>
+        </div>
+        <div class="field">
+          <span class="value js-timer_seconds" data-seconds>00</span>
+          <span class="label">Seconds</span>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
