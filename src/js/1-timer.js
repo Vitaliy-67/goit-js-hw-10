@@ -4,6 +4,7 @@ import iziToast from 'izitoast';
 const buttonStart = document.querySelector('.button-start');
 
 buttonStart.setAttribute('disabled', true);
+const inputData = document.querySelector('.input');
 
 let userSelectedDate = null;
 
@@ -14,7 +15,8 @@ const options = {
   minuteIncrement: 1,
   onClose(selectedDates) {
     const selectedDate = selectedDates[0];
-    if (selectedDate <= new Date()) {
+    const now = new Date();
+    if (selectedDate.getTime() <= now.getTime()) {
       iziToast.error({
         theme: 'dark',
         timeout: 4000,
@@ -88,11 +90,13 @@ const timet = {
   stop() {
     clearInterval(this.intervalId);
     this.intervalId = null;
+    inputData.removeAttribute('disabled');
   },
 };
 
 buttonStart.addEventListener('click', () => {
   timet.start();
+  inputData.setAttribute('disabled', true);
   buttonStart.setAttribute('disabled', true);
 });
 
