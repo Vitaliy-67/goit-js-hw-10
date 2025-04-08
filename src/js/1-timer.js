@@ -29,7 +29,7 @@ const options = {
         title: 'Error',
         message: 'Please choose a date in the future',
       });
-
+      buttonStart.setAttribute('disabled', true);
       return;
     }
     userSelectedDate = selectedDate;
@@ -47,9 +47,6 @@ const timet = {
   },
 
   start() {
-    if (!userSelectedDate) {
-    }
-
     this.intervalId = setInterval(() => {
       const diff = userSelectedDate - Date.now();
 
